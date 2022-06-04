@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loggedIn-user,
+.not-loggedIn-user {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    height: 200px;
+    width: 450px;
+}
+
+.not-loggedIn-user a {
+    text-decoration: unset;
+    color: #fff;
+}
+
+.not-loggedIn-user a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.not-loggedIn-user {
+    background-color: rgb(238, 113, 124);
+}
+
+.loggedIn-user {
+    background-color: rgb(173, 192, 233);
+}
+
+.loggedIn-user p,
+.not-loggedIn-user p {
+    width: 100%;
+    text-align: center;
+    line-height: 24px;
+}
+
+form {
+    width: 500px;
+    padding: 15px;
+    background-color: rgb(173, 192, 233);
+    border-radius: 15px;
+}
+form h1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+}
+.login,
+.password {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label {
+    font-size: 18px;
+}
+.login input,
+.password input {
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    width: 100%;
+    font-size: 18px;
+    line-height: 32px;
+    border-radius: 10px;
+    border: none;
+}
+
+.log-button {
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    padding: 0 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+}
+
+.log-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.error-msg,
+.reg-success {
+    display: block;
+    margin-top: 10px;
+    padding: 2.5px 5px;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+}
+.error-msg {
+    background-color: rgba(253, 177, 177, 0.7);
+}
+
+.reg-success {
+    background-color: rgba(117, 212, 108, 0.7);
+}
+
+.go-to-reg,
+.go-to-log {
+    margin-top: 15px;
+}
